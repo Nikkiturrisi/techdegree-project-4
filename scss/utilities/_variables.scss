@@ -18,7 +18,19 @@ $font-secondary: $miami;
 $font-tertiary: $water;
 
 //Button Colors
+$color-button: (
+  'default': $water,
+  'success': $grass,
+  'error': $tomato,
+  'warning': $tangerine,
+  'info': $eggplant,
+  );
 
 //Grid Colors
+  $color-grid: (
+  
+
+
+  );
 
 //Breakpoints
