@@ -1,4 +1,5 @@
 // Fonts
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 $main-font: 'Raleway', sans-serif;
 
@@ -18,6 +19,7 @@ $font-secondary: $miami;
 $font-tertiary: $water;
 
 //Button Colors
+
 $color-button: (
   'default': $water,
   'success': $grass,
@@ -27,10 +29,15 @@ $color-button: (
   );
 
 //Grid Colors
+
   $color-grid: (
-  
-
-
+  '12': $miami,
+  '6': darken($water, 10%),
+  '4': lighten($water, 10%),
+  '3': lighten($eggplant, 10%),
+  '5': lighten($grass, 10%),
+  '7': lighten($tomato, 10%),
+  '8': lighten($tangerine, 10%),
   );
 
 //Breakpoints
