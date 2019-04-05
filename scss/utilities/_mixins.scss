@@ -12,15 +12,28 @@
 //Buttons
 
 @mixin btn {
-  border-radius: .25em;
-  text-transform: uppercase;
+  border-radius: 5px;
+  text-transform:uppercase;
   color: $white;
-  margin: 10px 0;
+  margin: 10px;
+  width: 100%;
 }
 
+@mixin btn-color($map) {
+  @each $theme, $color in $map {
+    &--#{&theme} {
+      background-color: $color;
+      @content;
+    }
+  }
+}
 
 // Media query
-
+@mixin mq {
+  @media (min-width: $break-md){
+    @content;
+  }
+}
 
 // Flex box
 @mixin flex($disp: flex, $dir: null, $wrap: null, $just: null, $alin: null){
