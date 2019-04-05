@@ -1,0 +1,32 @@
+
+
+// Center
+
+@mixin center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//Buttons
+
+@mixin btn {
+  border-radius: .25em;
+  text-transform: uppercase;
+  color: $white;
+  margin: 10px 0;
+}
+
+
+// Media query
+
+
+// Flex box
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null, $alin: null){
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $alin;
+}

@@ -1,7 +1,6 @@
 // Fonts
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-$main-font: 'Raleway', sans-serif;
+$font-stack-primary: 'Raleway', sans-serif;
 
 //Color variables
 
@@ -11,26 +10,26 @@ $tomato: #d13e57;
 $tangerine: #e56630;
 $eggplant: #6f48af;
 $miami: #51d6b9;
+$white: #fff;
+$grey: grey;
 
 //Font Colors
 
-$font-primary: grey;
+$font-primary: $grey;
 $font-secondary: $miami;
 $font-tertiary: $water;
 
 //Button Colors
 
-$color-button: (
-  'default': $water,
-  'success': $grass,
-  'error': $tomato,
-  'warning': $tangerine,
-  'info': $eggplant,
-  );
+
+
+//Button Border Radius
+
+ $btn-radius: .5em;
 
 //Grid Colors
 
-  $color-grid: (
+  $color-grid:(
   '12': $miami,
   '6': darken($water, 10%),
   '4': lighten($water, 10%),
@@ -41,3 +40,5 @@ $color-button: (
   );
 
 //Breakpoints
+
+$break-md: 768px;
