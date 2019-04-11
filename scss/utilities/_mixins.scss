@@ -11,21 +11,13 @@
 
 //Buttons
 
-@mixin btn {
-  border-radius: 5px;
-  text-transform:uppercase;
+@mixin buttn {
   color: $white;
-  margin: 10px;
+  text-transform: uppercase;
+  border-radius: $br-btn;
   width: 100%;
-}
-
-@mixin btn-color($map) {
-  @each $theme, $color in $map {
-    &--#{&theme} {
-      background-color: $color;
-      @content;
-    }
-  }
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 // Media query
@@ -36,8 +28,8 @@
 }
 
 // Flex box
-@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null, $alin: null){
-  display: $disp;
+@mixin flex($dir: null, $wrap: null, $just: space-around, $alin: null){
+  display: flex;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;

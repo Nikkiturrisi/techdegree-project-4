@@ -4,11 +4,14 @@
 
 ul {
   list-style: none;
+  margin: 2em;
+  padding-left: 0;
 }
 
 p {
   text-align: left;
   line-height: 1.7em;
+  color: grey;
 }
 
 a {
@@ -354,6 +357,14 @@ template {
   display: none;
 }
 
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  padding: 2em;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -511,14 +522,63 @@ template {
   background-color: #6f48af;
 }
 
+.grid__col--12 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn--default,
 .btn--success,
 .btn--error,
 .btn--warning,
 .btn--info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.4em;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.grid__col--9 a {
+  color: grey;
+  text-transform: uppercase;
+  border-radius: 0.4em;
+  width: 100%;
+  line-height: 2em;
+}
+.grid__col--9 a:hover {
+  color: #fff;
+}
+
+.nav {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nav__item {
+    display: block;
+  }
+}
+
+.nav li {
+  line-height: 2.5em;
+}
+.nav li:hover {
+  color: #fff;
+  background-color: #51d6b9;
+}
+
+.headline--secondary {
+  text-align: left;
+  color: grey;
 }
 
 /*# sourceMappingURL=styles.css.map */

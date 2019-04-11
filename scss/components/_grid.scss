@@ -7,6 +7,13 @@
 // **********************************************
 
 
+.container {
+  @include center;
+  font-family: $font-stack-primary;
+  padding: 2em;
+}
+
+
 // grid base class
 .grid {
 

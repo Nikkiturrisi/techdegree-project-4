@@ -5,11 +5,14 @@
 
 ul {
   list-style: none;
+  margin: 2em;
+  padding-left: 0;
 }
 
 p {
   text-align: left;
   line-height: 1.7em;
+  color: $font-primary;
 }
 
 a {

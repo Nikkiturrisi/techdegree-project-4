@@ -1,0 +1,32 @@
+
+.grid__col--9 {
+  a {
+    color: $font-primary;
+    text-transform: uppercase;
+    border-radius: $br-btn;
+    width: 100%;
+    line-height: 2em;
+    &:hover {
+      color: $white;
+  }
+}
+}
+
+.nav {
+  @include center;
+  @include mq{
+    @include flex($dir:row);
+    &__item {
+    display: block;
+  }
+}
+}
+
+.nav li{
+  line-height: 2.5em;
+  &:hover {
+    color: $white;
+    background-color: $miami;
+  }
+
+}
