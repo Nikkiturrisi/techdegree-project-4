@@ -576,9 +576,32 @@ template {
   background-color: #51d6b9;
 }
 
+.blockquote {
+  color: #51d6b9;
+}
+
+.link {
+  color: #42dcf4;
+}
+
+.blockquote {
+  font-style: italic;
+  color: grey;
+  line-height: 1.25em;
+  font-size: 1.25em;
+  text-align: left;
+  padding-left: 10px;
+  border-left: solid 4px #51d6b9;
+}
+
 .headline--secondary {
   text-align: left;
   color: grey;
+}
+
+.headline--primary {
+  text-align: left;
+  color: #51d6b9;
 }
 
 /*# sourceMappingURL=styles.css.map */
