@@ -30,20 +30,20 @@ $font-tertiary: $water;
 
 
 //Button Border Radius
- $br-btn: .4em;
+ $br-btn: 5px;
 
 
 //Grid Colors
 
-  $color-grid:(
-  '12': $miami,
-  '6': darken($water, 10%),
-  '4': lighten($water, 10%),
-  '3': lighten($eggplant, 10%),
-  '5': lighten($grass, 10%),
-  '7': lighten($tomato, 10%),
-  '8': lighten($tangerine, 10%),
-  );
+
+
+  $dkwater: darken($water, 10%);
+  $ltwater: lighten($water, 10%);
+  $lteggplant: lighten($eggplant, 10%);
+  $ltgrass: lighten($grass, 10%);
+  $lttomato: lighten($tomato, 10%);
+  $lttang: lighten($tangerine, 10%);
+
 
 //Breakpoints
 

@@ -363,6 +363,7 @@ template {
   margin-right: auto;
   font-family: "Raleway", sans-serif;
   padding: 2em;
+  max-width: 1400px;
 }
 
 .grid__row {
@@ -535,16 +536,44 @@ template {
 .btn--info {
   color: #fff;
   text-transform: uppercase;
-  border-radius: 0.4em;
+  border-radius: 5px;
   width: 100%;
   margin: 10px 0;
   padding: 10px 0;
 }
 
+.grid__col--3.theme__colors {
+  background-color: #8a69c1;
+}
+
+.grid__col--4.theme__colors {
+  background-color: #72e5f7;
+}
+
+.grid__col--5.theme__colors {
+  background-color: #39b24d;
+}
+
+.grid__col--6.theme__colors {
+  background-color: #12d3f1;
+}
+
+.grid__col--7.theme__colors {
+  background-color: #db677b;
+}
+
+.grid__col--8.theme__colors {
+  background-color: #eb875d;
+}
+
+.grid__col--12.theme__colors {
+  background-color: #51d6b9;
+}
+
 .grid__col--9 a {
   color: grey;
   text-transform: uppercase;
-  border-radius: 0.4em;
+  border-radius: 5px;
   width: 100%;
   line-height: 2em;
 }
@@ -576,10 +605,6 @@ template {
   background-color: #51d6b9;
 }
 
-.blockquote {
-  color: #51d6b9;
-}
-
 .link {
   color: #42dcf4;
 }
@@ -601,6 +626,7 @@ template {
 
 .headline--primary {
   text-align: left;
+  padding-left: 10px;
   color: #51d6b9;
 }
 
