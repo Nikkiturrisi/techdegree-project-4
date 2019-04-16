@@ -675,6 +675,11 @@ template {
   text-align: left;
   padding-left: 10px;
   color: #51d6b9;
+  font-size: 1.9em;
+}
+
+.card {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,8 @@
 // Fonts
-
 $font-stack-primary: 'Raleway', sans-serif;
 
-//Color variables
 
+//Color variables
 $water: #42dcf4;
 $grass: #39b24d;
 $tomato: #d13e57;
@@ -13,38 +12,33 @@ $miami: #51d6b9;
 $white: #fff;
 $grey: grey;
 
-//Font Colors
 
+//Font Colors
 $font-primary: $grey;
 $font-secondary: $miami;
 $font-tertiary: $water;
 
+
 //Button Colors
-
-
-  $default: $water;
-  $success: $grass;
-  $error: $tomato;
-  $warning: $tangerine;
-  $info: $eggplant;
+$default: $water;
+$success: $grass;
+$error: $tomato;
+$warning: $tangerine;
+$info: $eggplant;
 
 
 //Button Border Radius
- $br-btn: 3px;
+$br-btn: 3px;
 
 
 //Grid Colors
-
-
-
-  $dkwater: #0086b3;
-  $ltwater: lighten($water, 10%);
-  $lteggplant: #e6b3ff;
-  $ltgrass: #98e698;
-  $lttomato: #ff9999;
-  $lttang: #ff8566;
+$dkwater: #0086b3;
+$ltwater: lighten($water, 10%);
+$lteggplant: #e6b3ff;
+$ltgrass: #98e698;
+$lttomato: #ff9999;
+$lttang: #ff8566;
 
 
 //Breakpoints
-
 $break-md: 768px;
