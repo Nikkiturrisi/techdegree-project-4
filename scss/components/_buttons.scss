@@ -5,11 +5,13 @@
 .btn--success {
   background-color:$success;
 }
+
 .btn--error {
   background-color:$error;
 }
+
 .btn--warning {
-   background-color:$warning;
+  background-color:$warning;
 }
 
 .btn--info {
@@ -30,7 +32,6 @@
 
 
 
-
   .grid__col--3.theme__colors{
     background-color: $lteggplant;
   }
@@ -40,7 +41,7 @@
   }
 
   .grid__col--5.theme__colors{
-    background-color:$grass;
+    background-color:$ltgrass;
   }
 
   .grid__col--6.theme__colors{
@@ -49,6 +50,7 @@
 
   .grid__col--7.theme__colors{
     background-color: $lttomato;
+
   }
 
   .grid__col--8.theme__colors{
@@ -58,3 +60,15 @@
   .grid__col--12.theme__colors{
     background-color: $miami;
   }
+
+
+.grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+  @include grdbtn;
+  @include mq;
+}

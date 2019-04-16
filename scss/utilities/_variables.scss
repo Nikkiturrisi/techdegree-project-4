@@ -30,19 +30,19 @@ $font-tertiary: $water;
 
 
 //Button Border Radius
- $br-btn: 5px;
+ $br-btn: 3px;
 
 
 //Grid Colors
 
 
 
-  $dkwater: darken($water, 10%);
+  $dkwater: #0086b3;
   $ltwater: lighten($water, 10%);
-  $lteggplant: lighten($eggplant, 10%);
-  $ltgrass: lighten($grass, 10%);
-  $lttomato: lighten($tomato, 10%);
-  $lttang: lighten($tangerine, 10%);
+  $lteggplant: #e6b3ff;
+  $ltgrass: #98e698;
+  $lttomato: #ff9999;
+  $lttang: #ff8566;
 
 
 //Breakpoints

@@ -362,7 +362,7 @@ template {
   margin-left: auto;
   margin-right: auto;
   font-family: "Raleway", sans-serif;
-  padding: 2em;
+  padding: 1em;
   max-width: 1400px;
 }
 
@@ -536,14 +536,14 @@ template {
 .btn--info {
   color: #fff;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 100%;
   margin: 10px 0;
   padding: 10px 0;
 }
 
 .grid__col--3.theme__colors {
-  background-color: #8a69c1;
+  background-color: #e6b3ff;
 }
 
 .grid__col--4.theme__colors {
@@ -551,29 +551,74 @@ template {
 }
 
 .grid__col--5.theme__colors {
-  background-color: #39b24d;
+  background-color: #98e698;
 }
 
 .grid__col--6.theme__colors {
-  background-color: #12d3f1;
+  background-color: #0086b3;
 }
 
 .grid__col--7.theme__colors {
-  background-color: #db677b;
+  background-color: #ff9999;
 }
 
 .grid__col--8.theme__colors {
-  background-color: #eb875d;
+  background-color: #ff8566;
 }
 
 .grid__col--12.theme__colors {
   background-color: #51d6b9;
 }
 
+.grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+  color: grey;
+  text-transform: lowercase;
+  text-align: left;
+  border-radius: 3px;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form__input {
+  border-style: none;
+  border-bottom: solid 4px #51d6b9;
+  line-height: 3em;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.img--avatar {
+  width: 50%;
+  margin: auto;
+}
+
+.img--frame {
+  border: solid 1px grey;
+  padding: 10px;
+  width: 100%;
+}
+
 .grid__col--9 a {
   color: grey;
-  text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 100%;
   line-height: 2em;
 }
@@ -613,15 +658,17 @@ template {
   font-style: italic;
   color: grey;
   line-height: 1.25em;
-  font-size: 1.25em;
+  font-size: 1.4em;
   text-align: left;
   padding-left: 10px;
-  border-left: solid 4px #51d6b9;
+  border-left: solid 6px #51d6b9;
 }
 
 .headline--secondary {
   text-align: left;
   color: grey;
+  font-weight: lighter;
+  margin-bottom: 30px;
 }
 
 .headline--primary {
