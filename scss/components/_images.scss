@@ -1,6 +1,9 @@
   .img--avatar {
     width: 50%;
     margin: auto;
+    @include mq{
+
+    }
   }
 
   .img--frame{
@@ -8,3 +11,16 @@
     padding: 10px;
     width: 100%;
   }
+
+ .grid__row{
+  @include mq{
+    width: 90%;
+    @include center;
+  }
+}
+
+.img--logo{
+  @include mq{
+    width: 70%;
+  }
+}

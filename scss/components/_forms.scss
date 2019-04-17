@@ -1,6 +1,9 @@
 
 .form {
   @include flex($dir: column);
+  @include mq{
+    @include center;
+  }
 }
 
 .form__input {

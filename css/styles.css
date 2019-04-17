@@ -7,6 +7,11 @@ ul {
   margin: 2em;
   padding-left: 0;
 }
+@media (min-width: 768px) {
+  ul {
+    float: right;
+  }
+}
 
 p {
   text-align: left;
@@ -618,10 +623,10 @@ template {
 }
 
 @media (min-width: 768px) {
-  .centered {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .centered.grid__col--7 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -629,6 +634,13 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form__input {
@@ -648,11 +660,25 @@ template {
   width: 50%;
   margin: auto;
 }
-
 .img--frame {
   border: solid 1px #bfbfbf;
   padding: 10px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid__row {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .img--logo {
+    width: 70%;
+  }
 }
 
 .grid__col--9 a {
@@ -675,9 +701,7 @@ template {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  .nav__item {
-    display: block;
+    margin-right: 100px;
   }
 }
 
@@ -687,6 +711,13 @@ template {
 .nav li:hover {
   color: #fff;
   background-color: #51d6b9;
+}
+@media (min-width: 768px) {
+  .nav li {
+    float: right;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
 }
 
 .link {

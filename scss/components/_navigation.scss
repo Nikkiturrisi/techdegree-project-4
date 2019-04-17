@@ -15,16 +15,20 @@
   @include center;
   @include mq{
     @include flex($dir:row);
-    &__item {
-    display: block;
-  }
+    margin-right: 100px;
 }
 }
+
 
 .nav li{
   line-height: 2.5em;
   &:hover {
     color: $white;
     background-color: $miami;
+  }
+  @include mq{
+    float: right;
+    margin-left: 20px;
+    margin-right: 5px;
   }
 }

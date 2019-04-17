@@ -84,8 +84,8 @@
   };
 }
 
-.centered{
+.centered.grid__col--7{
   @include mq{
-    @include flex($alin: center)
+    @include center;
   }
 }
