@@ -19,7 +19,12 @@
 }
 
 .grid__col--12 {
-  @include center;
+  margin-left:10px;
+  margin-right:10px;
+  @include mq{
+    padding: 5px;
+    @include flex($dir:row);
+  };
 }
 
 .btn--default,
@@ -28,6 +33,9 @@
 .btn--warning,
 .btn--info {
     @include buttn;
+    @include mq{
+      margin: 15px;
+    }
   }
 
 
@@ -70,5 +78,14 @@
 .grid__col--8.theme__colors,
 .grid__col--12.theme__colors {
   @include grdbtn;
-  @include mq;
+  @include mq{
+    margin: 5px;
+    text-align: center;
+  };
+}
+
+.centered{
+  @include mq{
+    @include flex($alin: center)
+  }
 }

@@ -508,25 +508,32 @@ template {
 }
 
 .btn--success {
-  background-color: #39b24d;
+  background-color: #64ce76;
 }
 
 .btn--error {
-  background-color: #d13e57;
+  background-color: #dd6e81;
 }
 
 .btn--warning {
-  background-color: #e56630;
+  background-color: #e66833;
 }
 
 .btn--info {
-  background-color: #6f48af;
+  background-color: #8f6ec4;
 }
 
 .grid__col--12 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .grid__col--12 {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .btn--default,
@@ -535,11 +542,21 @@ template {
 .btn--warning,
 .btn--info {
   color: #fff;
+  font-size: 0.75em;
   text-transform: uppercase;
   border-radius: 3px;
   width: 100%;
   margin: 10px 0;
   padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+    margin: 15px;
+  }
 }
 
 .grid__col--3.theme__colors {
@@ -581,11 +598,33 @@ template {
   text-transform: lowercase;
   text-align: left;
   border-radius: 3px;
-  line-height: 1.25em;
+  line-height: 2em;
   width: 100%;
   margin: 5px 0;
-  padding: 5px 0;
+  padding: 8px;
+  font-size: 0.5em;
 }
+@media (min-width: 768px) {
+  .grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+    margin: 5px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .centered {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -611,7 +650,7 @@ template {
 }
 
 .img--frame {
-  border: solid 1px grey;
+  border: solid 1px #bfbfbf;
   padding: 10px;
   width: 100%;
 }
@@ -666,9 +705,9 @@ template {
 
 .headline--secondary {
   text-align: left;
-  color: grey;
+  color: #bfbfbf;
   font-weight: lighter;
-  margin-bottom: 30px;
+  margin: 20px;
 }
 
 .headline--primary {
