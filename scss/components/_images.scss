@@ -1,8 +1,8 @@
   .img--avatar {
-    width: 50%;
+    width: 45%;
     margin: auto;
     @include mq{
-
+      width: auto;
     }
   }
 
@@ -10,17 +10,14 @@
     border: solid 1px $heading;
     padding: 10px;
     width: 100%;
+    @include mq{
+      width: auto;
+    }
   }
 
  .grid__row{
   @include mq{
     width: 90%;
     @include center;
-  }
-}
-
-.img--logo{
-  @include mq{
-    width: 70%;
   }
 }

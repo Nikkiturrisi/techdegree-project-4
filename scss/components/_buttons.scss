@@ -38,7 +38,11 @@
     }
   }
 
-
+[type="submit"] {
+  @include mq{
+    width: auto;
+  }
+}
 
   .grid__col--3.theme__colors{
     background-color: $lteggplant;

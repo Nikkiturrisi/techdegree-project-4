@@ -9,6 +9,7 @@ ul {
   padding-left: 0;
   @include mq{
     float:right;
+    margin: 0;
   }
 }
 
