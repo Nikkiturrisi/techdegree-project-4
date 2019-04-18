@@ -14,10 +14,3 @@
       width: auto;
     }
   }
-
- .grid__row{
-  @include mq{
-    width: 90%;
-    @include center;
-  }
-}

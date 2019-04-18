@@ -15,7 +15,71 @@
 
 }
 
+.grid__row{
+ @include mq{
+   width: 90%;
+   @include center;
+ }
+}
 
+.grid__col--12 {
+  margin-left:10px;
+  margin-right:10px;
+  @include mq{
+    padding: 5px;
+    @include flex($dir:row);
+  };
+}
+
+.grid__col--3.theme__colors{
+  background-color: $lteggplant;
+}
+
+.grid__col--4.theme__colors{
+  background-color: $ltwater;
+}
+
+.grid__col--5.theme__colors{
+  background-color:$ltgrass;
+}
+
+.grid__col--6.theme__colors{
+  background-color: $dkwater;
+}
+
+.grid__col--7.theme__colors{
+  background-color: $lttomato;
+
+}
+
+.grid__col--8.theme__colors{
+  background-color: $lttang;
+}
+
+.grid__col--12.theme__colors{
+  background-color: $miami;
+}
+
+
+.grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+@extend %grdbtn;
+@include mq{
+  margin: 5px;
+  text-align: center;
+};
+}
+
+.centered.grid__col--7{
+@include mq{
+  @include center;
+}
+}
 // grid base class
 .grid {
 

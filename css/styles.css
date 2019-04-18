@@ -1,3 +1,36 @@
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+  color: #fff;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-style: none;
+}
+
+.grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+  color: grey;
+  text-transform: lowercase;
+  text-align: left;
+  border-radius: 3px;
+  line-height: 2em;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 0.5em;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -372,6 +405,77 @@ template {
   max-width: 1400px;
 }
 
+@media (min-width: 768px) {
+  .grid__row {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.grid__col--12 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .grid__col--12 {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.grid__col--3.theme__colors {
+  background-color: #e6b3ff;
+}
+
+.grid__col--4.theme__colors {
+  background-color: #72e5f7;
+}
+
+.grid__col--5.theme__colors {
+  background-color: #98e698;
+}
+
+.grid__col--6.theme__colors {
+  background-color: #0086b3;
+}
+
+.grid__col--7.theme__colors {
+  background-color: #ff9999;
+}
+
+.grid__col--8.theme__colors {
+  background-color: #ff8566;
+}
+
+.grid__col--12.theme__colors {
+  background-color: #51d6b9;
+}
+
+@media (min-width: 768px) {
+  .grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--12.theme__colors {
+    margin: 5px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .centered.grid__col--7 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -529,33 +633,6 @@ template {
   background-color: #8f6ec4;
 }
 
-.grid__col--12 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-@media (min-width: 768px) {
-  .grid__col--12 {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-.btn--default,
-.btn--success,
-.btn--error,
-.btn--warning,
-.btn--info {
-  color: #fff;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  border-radius: 3px;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px 0;
-  border-style: none;
-}
 @media (min-width: 768px) {
   .btn--default,
 .btn--success,
@@ -569,72 +646,6 @@ template {
 @media (min-width: 768px) {
   [type=submit] {
     width: auto;
-  }
-}
-
-.grid__col--3.theme__colors {
-  background-color: #e6b3ff;
-}
-
-.grid__col--4.theme__colors {
-  background-color: #72e5f7;
-}
-
-.grid__col--5.theme__colors {
-  background-color: #98e698;
-}
-
-.grid__col--6.theme__colors {
-  background-color: #0086b3;
-}
-
-.grid__col--7.theme__colors {
-  background-color: #ff9999;
-}
-
-.grid__col--8.theme__colors {
-  background-color: #ff8566;
-}
-
-.grid__col--12.theme__colors {
-  background-color: #51d6b9;
-}
-
-.grid__col--3.theme__colors,
-.grid__col--4.theme__colors,
-.grid__col--5.theme__colors,
-.grid__col--6.theme__colors,
-.grid__col--7.theme__colors,
-.grid__col--8.theme__colors,
-.grid__col--12.theme__colors {
-  color: grey;
-  text-transform: lowercase;
-  text-align: left;
-  border-radius: 3px;
-  line-height: 2em;
-  width: 100%;
-  margin: 5px 0;
-  padding: 8px;
-  font-size: 0.5em;
-}
-@media (min-width: 768px) {
-  .grid__col--3.theme__colors,
-.grid__col--4.theme__colors,
-.grid__col--5.theme__colors,
-.grid__col--6.theme__colors,
-.grid__col--7.theme__colors,
-.grid__col--8.theme__colors,
-.grid__col--12.theme__colors {
-    margin: 5px;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .centered.grid__col--7 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -689,15 +700,6 @@ template {
   }
 }
 
-@media (min-width: 768px) {
-  .grid__row {
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .grid__col--9 a {
   color: grey;
   border-radius: 3px;
@@ -722,18 +724,18 @@ template {
   }
 }
 
-.nav li {
+.nav__item {
   line-height: 2.5em;
   border-radius: 3px;
 }
-.nav li:hover {
+.nav__item:hover {
   background-color: #51d6b9;
 }
-.nav li:hover a {
+.nav__item:hover a {
   color: #fff;
 }
 @media (min-width: 768px) {
-  .nav li {
+  .nav__item {
     float: right;
     padding: 10px 10px;
     margin: 15px;
