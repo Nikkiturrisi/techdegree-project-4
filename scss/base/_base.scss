@@ -5,12 +5,7 @@
 
 ul {
   list-style: none;
-  margin: 2em;
   padding-left: 0;
-  @include mq{
-    float:right;
-    margin: 0;
-  }
 }
 
 p {
